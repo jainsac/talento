@@ -9,6 +9,9 @@ export type MediaBranding = {
   voice_intro_seconds: number;
   watermark_enabled: boolean;
   screen_capture_protection: boolean;
+  sponsor_display_mode: "moving_strip" | "slideshow" | "fade" | "grid";
+  sponsor_rotation_seconds: number;
+  footer_enabled: boolean;
 };
 
 export const DEFAULT_MEDIA_BRANDING: MediaBranding = {
@@ -22,4 +25,7 @@ export const DEFAULT_MEDIA_BRANDING: MediaBranding = {
   voice_intro_seconds: 3,
   watermark_enabled: true,
   screen_capture_protection: true,
+  sponsor_display_mode: "moving_strip",
+  sponsor_rotation_seconds: 4,
+  footer_enabled: true,
 };
